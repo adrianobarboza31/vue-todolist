@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.center{
+    text-align: center;
+}
+.colore{
+    background-color: aquamarine;
+}
+h1{
+    color: aliceblue;
+}
+div input,button{
+padding: 10px 20px;
+border-radius: 10px;
+margin-left: 5px;
+margin-top: 10px;
+}
+.left{
+    margin-left: 810px;
+   
+}
+div.center{
+    padding-bottom: 20px;
+}
+.linea{
+    text-decoration: line-through;
+}

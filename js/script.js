@@ -17,6 +17,9 @@ const {createApp}= Vue ;
 const app=createApp({
     data(){
         return{
+            adds:{
+              text:" "
+            },
           lista:[
             {
              text:"cucinare",
@@ -36,6 +39,10 @@ const app=createApp({
     methods:{
         remove(i){
             this.lista.splice(i,1)
+        },
+        addTask(){
+            this.lista.unshift(this.adds)
+            
         }
     },
     computed:{

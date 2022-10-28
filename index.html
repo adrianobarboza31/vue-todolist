@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/vue@3.2.41/dist/vue.global.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -20,6 +21,7 @@
         </div>
         <p class="left" v-for="(item,index) in lista">
             <span :class="item.done==true ? 'linea': ''">{{item.text}}</span>
+            <span @click="remove"><i style="font-size:24px" class="fa">&#xf00d;</i></span>
         </p>
        
     </div>

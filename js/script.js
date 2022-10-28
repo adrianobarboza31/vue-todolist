@@ -34,7 +34,9 @@ const app=createApp({
         }
     },
     methods:{
-
+        remove(i){
+            this.lista.splice(i,1)
+        }
     },
     computed:{
 

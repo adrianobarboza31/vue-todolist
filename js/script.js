@@ -18,7 +18,8 @@ const app=createApp({
     data(){
         return{
             adds:{
-              text:" "
+              text:" ",
+              done:false
             },
           lista:[
             {
@@ -41,8 +42,15 @@ const app=createApp({
             this.lista.splice(i,1)
         },
         addTask(){
-            this.lista.unshift(this.adds)
+            this.lista.push(this.adds)
             
+        },
+        cambioClasse(index){
+            if(this.lista[index].done==true){
+                this.lista[index].done=false
+            } else {
+                this.lista[index].done=true
+            }
         }
     },
     computed:{

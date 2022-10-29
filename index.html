@@ -16,12 +16,12 @@
             <h1 class="center">lista delle cose da fare</h1> 
         </div>
         <div class="center">
-            <input  type="text" placeholder="nuova task" v-model="adds.text">
+            <input  @keyup.enter="addTask" type="text" placeholder="nuova task" v-model="adds.text">
             <button @click="addTask">aggiungi</button>
         </div>
         <p class="left" v-for="(item,index) in lista">
-            <span :class="item.done==true ? 'linea': ''">{{item.text}}</span>
-            <span @click="remove"><i style="font-size:24px" class="fa">&#xf00d;</i></span>
+            <span class="cursore"  :class="item.done==true ? 'linea': ''" @click="cambioClasse(index)">{{item.text}} </span>
+            <span class="cursore" @click="remove"><i style="font-size:24px" class="fa">&#xf00d;</i></span>
         </p>
        
     </div>

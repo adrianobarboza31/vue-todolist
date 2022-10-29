@@ -34,3 +34,6 @@ p{
     justify-content: space-between;
     align-items: center;
 }
+.cursore{
+    cursor: pointer;
+}
